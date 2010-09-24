@@ -1,0 +1,16 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+bin/selenium-proxy-start-server
+lib/selenium-proxy-start-server/cli.rb
+lib/selenium-proxy.rb
+script/console
+script/destroy
+script/generate
+spec/selenium-proxy-start-server_cli_spec.rb
+spec/selenium-proxy_spec.rb
+spec/spec.opts
+spec/spec_helper.rb
+tasks/rspec.rake

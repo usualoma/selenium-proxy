@@ -31,7 +31,7 @@ module SeleniumProxy
     @@default_serenium_host = 'localhost'
     @@default_serenium_port = 4444
 
-    def self.browser(opts = {}, &block)
+    def self.browser(opts = {})
       drb, browser = nil, nil
       begin
         drb = DRbObject.new_with_uri(self.drb_uri(opts))

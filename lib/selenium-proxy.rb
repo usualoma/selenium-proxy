@@ -35,6 +35,7 @@ module SeleniumProxy
       drb, browser = nil, nil
       begin
         drb = DRbObject.new_with_uri(self.drb_uri(opts))
+        drb.alive? if drb.respond_to?(:alive?)
       rescue DRb::DRbConnError => e
         browser = self.new(StringIO.new).browser(opts)
       end
